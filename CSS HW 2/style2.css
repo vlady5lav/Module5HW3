@@ -1,0 +1,24 @@
+#block {
+	text-align: justify;
+	max-width: 600px;
+}
+
+#block::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#left {
+	display: block;
+	float: left;
+	margin: 0 25px 10px 0;
+	max-width: 200px;
+}
+
+#right {
+	display: block;
+	float: right;
+	margin: 20px 0 10px 25px;
+	max-width: 200px;
+}
