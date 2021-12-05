@@ -11,11 +11,11 @@ export const arrayUpdater = () => {
     let arr = [];
 
     return (item) => {
-        if (item) {
-            arr.push(item);
+        if (item == undefined) {
+            arr = [];
         }
         else {
-            arr = [];
+            arr.push(item);
         }
 
         return arr;
